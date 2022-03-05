@@ -1,6 +1,6 @@
 # CustomTimesheetFormBundle
 
-A Kimai 2 plugin, to use a custom built form for timesheet entries.
+A Kimai 2 plugin, to use a custom built form for timesheet entries. this plugin https://github.com/lduer/CustomTimesheetFormBundle which has not been updated for a long time
 
 ## Description/Contents
 
@@ -15,7 +15,7 @@ This Plugin is designed to improve the use of Kimai2 for users with small screen
 in the following additional ** Contents:**
 
 + Detecting the device-width (screen-with) by using JS to check which bootstrap-`div` is visible. 
-  See [Resources/public/js/visible-media-query.js](https://github.com/lduer/CustomTimesheetFormBundle/blob/master/Resources/public/js/visible-media-query.js)
+  See [Resources/public/js/visible-media-query.js](https://github.com/lkanko/CustomTimesheetFormBundle/blob/master/Resources/public/js/visible-media-query.js)
 + Add a Timepicker to help selecting the right time. On narrow (mobile) screens, this is currently disabled, 
   because I haven't found a suitable JS-Timepicker but at least the native timepicker on android is not that bad. 
 + Disabling Select2 Boxes on small screens. Most of the mobile browsers shows a better list and while filling the 
@@ -32,7 +32,7 @@ in the following additional ** Contents:**
 First clone it to your Kimai installation `plugins` directory:
 ```
 cd /kimai/var/plugins/
-git clone https://gitlab.com/lduer/CustomTimesheetFormBundle.git
+git clone https://github.com/lkanko/CustomTimesheetFormBundle.git
 ```
 
 Install the assets (a JS file is loaded via `src`)

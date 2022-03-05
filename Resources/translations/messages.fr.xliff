@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file date="2020-01-07T20:00:00Z" source-language="fr" target-language="fr" datatype="plaintext" original="none">
+        <body>
+            <trans-unit id="Custom Forms">
+                <source>Custom Forms</source>
+                <target>Formulaires personnalisés</target>
+            </trans-unit>
+            <trans-unit id="alert.starttime-higher-than-endtime">
+                <source>alert.starttime-higher-than-endtime</source>
+                <target>Mise en garde! L'heure de début insérée est supérieure à l'heure de fin ! Si vous cliquez sur valider, la date du lendemain sera choisie comme date de fin (au-delà de minuit). Cliquez sur 'annuler' pour modifier les valeurs de temps.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

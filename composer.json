@@ -1,27 +1,26 @@
 {
-    "name": "lduer/custom-timesheet-form-plugin",
+    "name": "lkanko/custom-timesheet-form-plugin",
     "description": "A Kimai 2 plugin, modifies the timesheet form.",
-    "homepage": "https://github.com/lduer",
+    "homepage": "https://github.com/lkanko/CustomTimesheetFormBundle",
     "type": "kimai-plugin",
-    "version": "1.1",
-    "require": {
-        "kimai/kimai2-composer": "*"
+    "version": "0.0",
+    "autoload": {
+        "psr-4": {
+            "KimaiPlugin\\CustomTimesheetFormBundle\\": ""
+        }
     },
-    "keywords": [
-        "kimai",
-        "kimai-plugin"
-    ],
     "license": "MIT",
     "authors": [
         {
-            "name": "lduer",
-            "email": "duerlukas@gmail.com"
+            "name": "lkanko",
+            "email": "victoirekanko@gmail.com",
+            "homepage": "https://github.com/lkanko"
         }
     ],
     "extra": {
         "kimai": {
-            "require": "1.4",
-            "version": "0.3",
+            "require": "1.18.1",
+            "version": "0.0",
             "name": "CustomTimesheetFormBundle"
         }
     },
@@ -30,6 +29,6 @@
         "codestyle-fix": "vendor/bin/php-cs-fixer fix"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.16"
+        "friendsofphp/php-cs-fixer": "^v3.6.0"
     }
 }

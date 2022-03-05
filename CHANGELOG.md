@@ -1,5 +1,5 @@
 # Changelog
 
-## 0.1 
+## 0.0 
 
-Compatible with Kimai 1.4
+planning
