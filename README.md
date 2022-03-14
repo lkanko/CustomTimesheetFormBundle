@@ -1,6 +1,6 @@
 # CustomTimesheetFormBundle
 
-A Kimai 2 plugin, to use a custom built form for timesheet entries. this plugin https://github.com/lduer/CustomTimesheetFormBundle which has not been updated for a long time
+A Kimai 2 plugin, to use a custom built form for timesheet entries. this plugin forked from https://github.com/lduer/CustomTimesheetFormBundle which has not been updated for a long time
 
 ## Description/Contents
 

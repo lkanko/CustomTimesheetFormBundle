@@ -23,8 +23,9 @@ use Symfony\Component\Validator\Constraints\NotBlank;
  */
 class TimesheetEditForm extends TimesheetEditFormBase
 {
-    protected function addBegin(FormBuilderInterface $builder, array $dateTimeOptions)
+    protected function addBegin(FormBuilderInterface $builder, array $dateTimeOptions, array $options = [])
     {
+
         $builder->add('begindate', DatePickerType::class, array_merge($dateTimeOptions, [
             'label' => 'label.date',
             'mapped' => false,
@@ -74,7 +75,7 @@ class TimesheetEditForm extends TimesheetEditFormBase
         );
     }
 
-    protected function addEnd(FormBuilderInterface $builder, array $dateTimeOptions)
+    protected function addEnd(FormBuilderInterface $builder, array $dateTimeOptions, array $options = [])
     {
         $builder->add('endtime', TimePickerType::class, [
             'widget' => 'single_text',
@@ -127,7 +128,7 @@ class TimesheetEditForm extends TimesheetEditFormBase
     /**
      * @param FormBuilderInterface $builder
      */
-    protected function addDuration(FormBuilderInterface $builder)
+    protected function addDuration(FormBuilderInterface $builder, array $options, bool $forceApply = false, bool $autofocus = false)
     {
         // do not render duration field
         return;

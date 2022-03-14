@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the CustomTimesheetFormBundle for Kimai 2.
+ * This file is part of the Kimai time-tracking app.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -46,7 +46,7 @@ class TimePickerType extends AbstractType
      */
     public function configureOptions(OptionsResolver $resolver)
     {
-        $dateTimePickerFormat = $this->localeSettings->getDateTimePickerFormat();
+        $dateTimePickerFormat = $this->localeSettings->getDateTimeFormat();
         $timeFormat = $this->localeSettings->getTimeFormat();
 
         $timezone = $this->dateTime->getTimezone()->getName();
@@ -84,8 +84,8 @@ class TimePickerType extends AbstractType
     {
         $timePickerFormat = explode(' ', $dateTimePicker);
 
-        if (count($timePickerFormat) > 1) {
-            return (string)end($timePickerFormat);
+        if (\count($timePickerFormat) > 1) {
+            return (string) end($timePickerFormat);
         }
 
         $string = 'HH:mm';
